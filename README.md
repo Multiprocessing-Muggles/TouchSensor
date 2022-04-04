@@ -1,6 +1,9 @@
 # TouchSensor
-TargetAPI=31
+
+TargetAPI=31 
+
 MinAPI=27
+
 <b>Basic Feature of this Application:<b>
 
 Provides 4 types of vibration 
@@ -34,5 +37,5 @@ Dependencies Used:
     
     6.androidx.test.espresso:espresso-core:version 3.4.0
  
-  App Running in Android :  
+  App Running in Android 11 :  
   ![WhatsApp Image 2022-04-05 at 12 05 26 AM](https://user-images.githubusercontent.com/71692310/161614214-cd815e09-3024-451c-8df6-84fda776d40f.jpeg)
