@@ -1,5 +1,7 @@
 package dasgupta.multiprocessingmuggles.sunami.touchsensor;
 
+import static android.os.SystemClock.sleep;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
@@ -31,34 +33,40 @@ public class MainActivity extends AppCompatActivity {
         longClick.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                vibrator.vibrate(3000);
+                vibrator.vibrate(1500);
             }
         });
 
         normalClick.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                vibrator.vibrate(1000);
+                vibrator.vibrate(400);
             }
         });
 
         tickClick.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                vibrator.vibrate(1000);
-                vibrator.vibrate(3000);
+                vibrator.vibrate(250);
+                sleep(400);
+                vibrator.vibrate(250);
             }
         });
 
         click.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                vibrator.vibrate(1000);
-
-                vibrator.vibrate(3000);
-                vibrator.vibrate(1000);
-
-                vibrator.vibrate(3000);
+                vibrator.vibrate(250);
+                sleep(500);
+                vibrator.vibrate(500);
+                sleep(300);
+                vibrator.vibrate(250);
+                sleep(500);
+                vibrator.vibrate(500);
+                sleep(300);
+                vibrator.vibrate(250);
+                sleep(400);
+                vibrator.vibrate(500);
             }
         });
     }
